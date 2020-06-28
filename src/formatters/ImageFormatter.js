@@ -65,11 +65,8 @@ class ImageFormatter extends React.Component {
   };
 
   render() {
-    const style = this.state.value ?
-      { backgroundImage: 'url(' + this.state.value + ')' } :
-      undefined;
-
-    return <div className="react-grid-image" style={style} />;
+    console.log('New image formatter')
+    return <img src={this.state.value} />;
   }
 }
 
